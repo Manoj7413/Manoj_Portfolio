@@ -1,0 +1,130 @@
+/* home_page css */
+.motion_div {
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.line { 
+  width: 1050px;
+  height: 4px;
+  align-self: center;
+  background-color: #fff;
+  position: relative;
+  bottom: 10%;
+  border-radius: 50%;
+  animation: line_flow 2s forwards;
+}
+
+@keyframes line_flow {
+  0% {
+    transform: translateX(-500%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* about page css */
+.about {
+  background-color: rgb(4, 20, 44);
+  width: 1000px;
+  height: fit-content;
+  z-index: 1;
+}
+
+.about h1{
+  animation: text_flow 3s forwards infinite;
+}
+
+@keyframes text_flow {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+}
+
+.about_me {
+  background: linear-gradient(to right, rgba(31, 90, 179, 0.71), transparent);
+  width: 950px;
+  height: min-content;
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 10px;
+  animation: my_intro 3s forwards infinite;
+  /* animation: my_intro_back 0.5s forwards; */
+}
+
+.text-accent {
+  color: #5eead4;
+}
+
+@keyframes my_intro {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 5%);
+    opacity: 1;
+  }
+}
+
+.anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

@@ -1,0 +1,282 @@
+.tech_main {
+    z-index: 1;
+}
+
+.dev_main {
+    display: flex;
+    gap: 40px;
+}
+
+.frontend,
+.backend,
+.database {
+    margin-top: 30px;
+    background-color: white;
+    height: 500px;
+    width: 27%;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+
+.frontend {
+    border-top: 5px solid rgb(229, 99, 99);
+}
+
+.backend {
+    border-top: 5px solid rgb(78, 62, 214);
+}
+
+.database {
+    border-top: 5px rgb(23, 188, 140) solid;
+}
+
+.text1,
+.text2,
+.text3 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.text1 h3 {
+    font-weight: 700;
+    color: rgb(229, 99, 99);
+    text-align: left;
+}
+
+.text2 h3 {
+    font-weight: 700;
+    color: rgb(78, 62, 214);
+    text-align: left;
+}
+
+.text3 h3 {
+    font-weight: 700;
+    color: rgb(23, 188, 140);
+    text-align: left;
+}
+
+.text1,
+.text2,
+.text3 p {
+    color: rgb(74, 85, 104);
+    text-align: left;
+}
+
+.lang {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.language1 {
+    height: 20%;
+    width: 42%;
+    border-radius: 10px;
+    margin: 0px;
+    gap: 5px;
+    padding-top: 15px;
+    box-shadow: 0 0 10px rgb(208, 202, 202);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    color: black;
+    transition: all 0.1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.common {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.language1 svg {
+    animation: identifier_back 0.4s forwards;
+}
+
+.language1:hover {
+    transform: translate(0, -4%);
+    box-shadow: 0 5px 10px rgb(208, 202, 202);
+}
+
+.language1.js:hover .common .icon,
+.language1.react:hover .common .icon,
+.language1.html:hover .common .icon,
+.language1.css:hover .common .icon,
+.language1.flutter:hover .common .icon,
+.language1.dart:hover .common .icon,
+.language1.node:hover .common .icon,
+.language1.php:hover .common .icon,
+.language1.python:hover .common .icon,
+.language1.graphql:hover .common .icon,
+.language1.restapi:hover .common .icon,
+.language1.mongo:hover .common .icon,
+.language1.mysql:hover .common .icon,
+.language1.postgre:hover .common .icon {
+    fill: white;
+    transition: fill 0.3s ease-in-out;
+}
+
+.language1.react:hover {
+    border-color: #62dafb;
+}
+
+.language1.react:hover .common {
+    background-color: #62dafb;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.js:hover {
+    border-color: #f0db4f;
+}
+
+.language1.js:hover .common {
+    background-color: #f0db4f;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.html:hover {
+    border-color: #e34c26;
+}
+
+.language1.html:hover .common {
+    background-color: #e34c26;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.css:hover {
+    border-color: #264de4;
+}
+
+.language1.css:hover .common {
+    background-color: #264de4;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.flutter:hover {
+    border-color: #02569B;
+}
+
+.language1.flutter:hover .common {
+    background-color: #02569B;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.dart:hover {
+    border-color: #0175C2;
+}
+
+.language1.dart:hover .common {
+    background-color: #0175C2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.node:hover {
+    border-color: #68A063;
+}
+
+.language1.node:hover .common {
+    background-color: #68A063;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.php:hover {
+    border-color: #8892be;
+}
+
+.language1.php:hover .common {
+    background-color: #8892be;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.python:hover {
+    border-color: #3776AB;
+}
+
+.language1.python:hover .common {
+    background-color: #3776AB;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.graphql:hover {
+    border-color: #E535AB;
+}
+
+.language1.graphql:hover .common {
+    background-color: #E535AB;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.restapi:hover {
+    border-color: #4CAF50;
+}
+
+.language1.restapi:hover .common {
+    background-color: #4CAF50;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.mongo:hover {
+    border-color: #47A248;
+}
+
+.language1.mongo:hover .common {
+    background-color: #47A248;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.mysql:hover {
+    border-color: #00758F;
+}
+
+.language1.mysql:hover .common {
+    background-color: #00758F;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.language1.postgre:hover {
+    border-color: #336791;
+}
+
+.language1.postgre:hover .common {
+    background-color: #336791;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.language1:hover img,
+.language1:hover svg {
+    animation: identifier 0.5s forwards;
+}
+
+@keyframes identifier {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes identifier_back {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

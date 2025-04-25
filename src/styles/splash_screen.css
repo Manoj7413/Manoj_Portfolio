@@ -1,0 +1,50 @@
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.splash-content {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.character {
+  font-size: 4rem;
+  font-weight: bold;    
+  color: #fff;
+  text-align: center;
+  line-height: 150px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.indicator {
+  width: 150px;
+  height: 150px;
+  /* border: 4px solid transparent; */
+  border-top: 4px solid #5eead4;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
