@@ -4,7 +4,7 @@ import { SiJavascript, SiHtml5, SiCss3, SiDart, SiFlutter, SiNodedotjs, SiPhp, S
 
 export default function Technical_experties() {
     return (
-        <div className="tech_main vh-100 text-center">
+        <div className="tech_main text-center">
             <h1
                 className="pt-5"
                 style={{

@@ -1,21 +1,50 @@
+/* home css */
+.custom-collapse {
+  width: 100%;           
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .custom-collapse {
+    position: absolute;
+    top: 60px;                  
+    right: 20px;
+    width: 60%;
+    height: 58vh;      
+    background-color: #111111e8;  
+    padding: 2rem;
+  }
+}
+
+
 /* home_page css */
 .motion_div {
-  z-index: 1;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 80px;
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .motion_div {
+    gap: 0px;
+  }
 }
 
 .line { 
-  width: 1050px;
+  width: 100%;
+  max-width: 1000px;
   height: 4px;
   align-self: center;
   background-color: #fff;
   position: relative;
-  bottom: 10%;
+  margin-top: -100px;
   border-radius: 50%;
   animation: line_flow 2s forwards;
+}
+
+@media (max-width: 1024px) {
+  .line {
+    margin-top: 70px;
+  }
 }
 
 @keyframes line_flow {

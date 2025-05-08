@@ -11,7 +11,6 @@
     padding: 30px;
     background: linear-gradient(145deg, #1e1e1e, #121212);
     border-radius: 30px;
-    margin-bottom: 1%;
     font-family: 'Arial', sans-serif;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -79,10 +78,6 @@
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-}
-
-.contact-header {
-    margin-bottom: 20px;
 }
 
 .contact-header-title {

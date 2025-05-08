@@ -4,7 +4,16 @@
 
 .dev_main {
     display: flex;
+    flex-direction: row;
     gap: 40px;
+}
+
+@media (max-width: 991px) {
+    .dev_main {
+        flex-direction: column;
+        overflow: hidden;
+        gap: 0px;
+    }
 }
 
 .frontend,
@@ -18,6 +27,15 @@
     padding-top: 20px;
     padding-bottom: 30px;
     overflow: auto;
+}
+
+@media (max-width: 991px) {
+    .frontend,
+    .backend,
+    .database {
+        width: 100%;
+        height: max-content;
+    }
 }
 
 .frontend {
