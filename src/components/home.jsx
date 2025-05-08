@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import ParticlesComponent from '../components/home_animation';
 import HomePage from '../components/home_page';
 import AboutMe from '../components/about_page';
@@ -8,24 +8,42 @@ import Contact from './contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Collapse from 'bootstrap/js/dist/collapse';
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
 
 
 export default function Home() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNavLinkClick = useCallback(() => {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      const bsCollapse = Collapse.getInstance(navbarCollapse) || new Collapse(navbarCollapse);
+      bsCollapse.hide();
+      setIsNavOpen(false);
+    }
+  }, []);
+
   useEffect(() => {
     const links = document.querySelectorAll(".nav-link");
-    links.forEach(link => {
-      link.addEventListener("click", () => {
-        setTimeout(() => {
-          const navbarCollapse = document.querySelector(".navbar-collapse");
-          if (navbarCollapse.classList.contains("show")) {
-            const bsCollapse = Collapse.getInstance(navbarCollapse) || new Collapse(navbarCollapse);
-            bsCollapse.hide();
-          }
-        }, 300);
-      });
-    });
-  }, []);
-  
+    links.forEach(link => link.addEventListener("click", handleNavLinkClick));
+
+    return () => {
+      links.forEach(link => link.removeEventListener("click", handleNavLinkClick));
+    };
+  }, [handleNavLinkClick]);
+
+  const handleToggle = () => {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    const bsCollapse = Collapse.getInstance(navbarCollapse) || new Collapse(navbarCollapse);
+
+    if (isNavOpen) {
+      bsCollapse.hide();
+    } else {
+      bsCollapse.show();
+    }
+    setIsNavOpen(!isNavOpen);
+  };
 
   return (
     <div style={{ background: "#000" }}>
@@ -34,16 +52,12 @@ export default function Home() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-4">
         <a className="navbar-brand text-white" href="#home">Manoj</a>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" onClick={handleToggle}>
+          {isNavOpen ? (
+            <IoMdClose size={30} color="white" />
+          ) : (
+            <HiOutlineMenuAlt3 size={30} color="white" />
+          )}
         </button>
 
         <div className="collapse navbar-collapse custom-collapse justify-content-end" id="navbarNav">

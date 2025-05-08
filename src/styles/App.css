@@ -1,18 +1,19 @@
 /* home css */
 .custom-collapse {
-  width: 100%;           
-  border-radius: 10px;
+  width: 100%;      
 }
 
 @media (max-width: 991px) {
   .custom-collapse {
     position: absolute;
-    top: 60px;                  
-    right: 20px;
+    top: 0px;     
+    right: 0;
     width: 60%;
-    height: 58vh;      
-    background-color: #111111e8;  
-    padding: 2rem;
+    padding-top: 60px;
+    height: max-content; 
+    background-color: #111111f3;  
+    z-index: -1;
+    padding-bottom: 2rem;
   }
 }
 
