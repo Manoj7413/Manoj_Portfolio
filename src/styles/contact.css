@@ -52,22 +52,8 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
+    box-shadow: none;
     border-color: #007bff;
-}
-
-.submit-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #0056b3;
 }
 
 
