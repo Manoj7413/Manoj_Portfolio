@@ -6,9 +6,9 @@
 @media (max-width: 991px) {
   .custom-collapse {
     position: absolute;
-    top: 0px;     
+    top: 0;     
     right: 0;
-    width: 60%;
+    width: 50%;
     padding-top: 60px;
     height: max-content; 
     background-color: #111111f3;  

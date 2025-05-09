@@ -60,7 +60,7 @@ export default function Home() {
           )}
         </button>
 
-        <div className="collapse navbar-collapse custom-collapse justify-content-end" id="navbarNav">
+        <div className="collapse navbar-collapse custom-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto head align-items-center">
             <li className="nav-item header-clean-btn">
               <a href="#home" className="nav-link">Home</a>
