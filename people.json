@@ -1,0 +1,34 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "role": "Undergraduate Researcher",
+      "period": "2022-Present",
+      "institute": "IIT Patna",
+      "research": "Nanomaterials Characterization",
+      "imageURL": "/images/team/rahul.jpg",
+      "category": "current"
+    },
+    {
+      "id": 2,
+      "name": "Priya Patel",
+      "role": "PhD Candidate",
+      "period": "2020-Present",
+      "institute": "IIT Madras",
+      "research": "Thin Film Deposition",
+      "imageURL": "/images/team/priya.jpg",
+      "category": "current"
+    },
+    {
+      "id": 3,
+      "name": "Amit Kumar",
+      "role": "Postdoctoral Researcher",
+      "period": "2019-2022",
+      "institute": "IIT Bombay",
+      "research": "Materials Synthesis",
+      "imageURL": "/images/team/amit.jpg",
+      "category": "alumni"
+    }
+  ]
+}
