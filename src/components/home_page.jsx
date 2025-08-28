@@ -14,7 +14,7 @@ const HomePage = () => {
           className="home_text_div px-3"
         >
           <div className="text-white bg-transparent fs-5">
-            <h1 className="display-4 fw-bold">Hi, I'm Manoj Kumhar</h1>
+            <h1 className="display-4 fw-bold">Hi Manoj Kumhar ji ji</h1>
             <p className="lead text-secondary">Mobile App Developer | Web Developer</p>
             <p className="mt-3 text-light">
               Passionate about crafting intuitive and dynamic applications <br />using Flutter Dart and React, Node.js, Express.js, JavaScript and MongoDB.
