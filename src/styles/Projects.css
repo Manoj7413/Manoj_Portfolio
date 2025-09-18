@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   /* padding: 50px; */
-  gap: 2rem;
+  /* gap: 2rem; */
   position: relative;
 }
 
@@ -14,7 +14,7 @@
   align-items: center;
   flex-direction: column;
   padding: 1.5rem;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;

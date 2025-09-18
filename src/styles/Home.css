@@ -1,0 +1,145 @@
+/* Home.css */
+.portfolio-container {
+  background: #000;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Enhanced Navigation */
+.navbar {
+  background: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 15px 0;
+}
+
+.navbar-scrolled {
+  background: rgba(0, 0, 0, 0.9) !important;
+  padding: 10px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.brand-gradient {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 15px !important;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4facfe !important;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 80%;
+}
+
+.custom-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* Section styling */
+.section-home,
+.section-about,
+.section-projects,
+.section-skills {
+  padding: 90px 0;
+  position: relative;
+}
+.section-contact {
+  padding: 20px 0;
+  position: relative;
+}
+
+.section-about,
+.section-skills {
+  background: linear-gradient(to bottom, #000000, #0a0a2a);
+}
+
+.section-projects,
+.section-contact {
+  background: linear-gradient(to bottom, #0a0a2a, #000000);
+}
+
+/* Animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-home {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+  
+  .brand-gradient {
+    font-size: 1.3rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+}

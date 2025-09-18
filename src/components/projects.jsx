@@ -1,10 +1,12 @@
-import {React, useEffect} from "react";
+import { React, useEffect } from "react";
 import "../styles/Projects.css";
 
 export default function Projects() {
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll(".section1, .section2, .section3, .section4");
+      const sections = document.querySelectorAll(
+        ".section1, .section2, .section3, .section4"
+      );
       sections.forEach((section, index) => {
         const topOffset = 80 + 20 * index;
         section.style.top = `${topOffset}px`;
@@ -25,15 +27,25 @@ export default function Projects() {
       <div className="Container section1">
         <div className="project-wrapper">
           <img
-            src='/Barbera_User_App_Banner.png'
+            src="/Barbera_User_App_Banner.png"
             alt="Career Craft Screenshot"
             className="project-image img1"
           />
 
           <div className="project-details">
-            <h2 className="project-title">Internship at Barbera Home Salon Service App</h2>
+            <h2 className="project-title">
+              Internship at Barbera Home Salon Service App
+            </h2>
             <p className="project-description">
-              During my internship at Barbera Salon Service App, I worked as a Mobile App Developer where I was responsible for building and optimizing user interfaces using Flutter. I contributed to key features like service booking, user authentication, and profile management. I also collaborated with the backend team to integrate APIs and ensure a seamless user experience. This hands-on experience greatly enhanced my skills in mobile development, real-time data handling, and working in a collaborative development environment.
+              During my internship at Barbera Salon Service App, I worked as a
+              Mobile App Developer where I was responsible for building and
+              optimizing user interfaces using Flutter. I contributed to key
+              features like service booking, user authentication, and profile
+              management. I also collaborated with the backend team to integrate
+              APIs and ensure a seamless user experience. This hands-on
+              experience greatly enhanced my skills in mobile development,
+              real-time data handling, and working in a collaborative
+              development environment.
             </p>
 
             <div className="tech-stack">
@@ -68,18 +80,89 @@ export default function Projects() {
       </div>
 
       {/* second project */}
+      <div className="Container section1">
+        <div className="project-wrapper">
+          <img
+            src="/Chat_App_Banner.png"
+            alt="Chat App Screenshot"
+            className="project-image img1"
+          />
+
+          <div className="project-details">
+            <h2 className="project-title">Real-Time Chat Application</h2>
+            <p className="project-description">
+              This is a full-featured chat application built with React and the
+              Next.js framework. It provides real-time messaging with friends
+              and groups. Users can create groups, add or remove members, and
+              manage friendships. The backend is powered by Convex, and Clerk is
+              used for secure authentication. The app offers seamless real-time
+              updates and a modern, responsive UI for a smooth user experience.
+            </p>
+
+            <div className="tech-stack">
+              <span className="tech-badge">React</span>
+              <span className="tech-badge">Next.js</span>
+              <span className="tech-badge">Convex</span>
+              <span className="tech-badge">Clerk</span>
+            </div>
+
+            <div className="d-flex justify-content-between align-items-end">
+              <div className="buttons">
+                <a
+                  href="https://chat-application-blue-three.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="code-btn">
+                    Code <i className="ms-1 bi bi-code-slash"></i>
+                  </button>
+                </a>
+                <a
+                  href="https://chat-application-blue-three.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="demo-btn">
+                    Demo <i className="ms-1 bi bi-box-arrow-up-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div className="ms-3 bottom-4 right-4 bg-white p-1 rounded-3">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDQuixpZ6nCi43YkusCMTh54t4K0uP9zTMw&s"
+                  alt="React Logo"
+                  style={{ height: "80px", width: "90px" }}
+                  className="img-fluid rounded-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* second project */}
       <div className="Container section2">
         <div className="project-wrapper">
           <img
-            src='/chitra3.png'
+            src="/chitra3.png"
             alt="Career Craft Screenshot"
             className="project-image img2"
           />
 
           <div className="project-details">
-            <h2 className="project-title">Chitra Vichar - E-commerce Website</h2>
+            <h2 className="project-title">
+              Chitra Vichar - E-commerce Website
+            </h2>
             <p className="project-description">
-              I worked as a Frontend Developer for Chitra Vichar, an official e-commerce website focused on selling merchandise. I was responsible for developing a fully responsive and dynamic user interface using Flutter. My work included building product listing pages, implementing category filters, managing navigation between different sections. I collaborated with the backend team to integrate APIs for product data, cart management, and order processing. The technologies I used included Flutter, Dart, Firebase, and REST APIs.
+              I worked as a Frontend Developer for Chitra Vichar, an official
+              e-commerce website focused on selling merchandise. I was
+              responsible for developing a fully responsive and dynamic user
+              interface using Flutter. My work included building product listing
+              pages, implementing category filters, managing navigation between
+              different sections. I collaborated with the backend team to
+              integrate APIs for product data, cart management, and order
+              processing. The technologies I used included Flutter, Dart,
+              Firebase, and REST APIs.
             </p>
             <div className="tech-stack">
               <span className="tech-badge">Dart</span>
@@ -116,7 +199,7 @@ export default function Projects() {
       <div className="Container section3">
         <div className="project-wrapper">
           <img
-            src='/pinterest_clone.png'
+            src="/pinterest_clone.png"
             alt="Pinterest Clone Screenshot"
             className="project-image img3"
           />
@@ -124,7 +207,15 @@ export default function Projects() {
           <div className="project-details">
             <h2 className="project-title">PinIt - Pinterest Clone</h2>
             <p className="project-description">
-              PinIt is a Pinterest-inspired web application built using Node.js, Express.js, HTML, CSS, and JavaScript. It allows users to sign up, log in, and manage their own profiles securely with user authentication. Users can upload image posts using Multer, which are saved and displayed on their accounts. MongoDB is used for efficient data storage and retrieval. The UI is designed to closely replicate the Pinterest-style grid layout. The app focuses on user-generated content with smooth posting and browsing experiences.
+              PinIt is a Pinterest-inspired web application built using Node.js,
+              Express.js, HTML, CSS, and JavaScript. It allows users to sign up,
+              log in, and manage their own profiles securely with user
+              authentication. Users can upload image posts using Multer, which
+              are saved and displayed on their accounts. MongoDB is used for
+              efficient data storage and retrieval. The UI is designed to
+              closely replicate the Pinterest-style grid layout. The app focuses
+              on user-generated content with smooth posting and browsing
+              experiences.
             </p>
             <div className="tech-stack">
               <span className="tech-badge">Node.js</span>
@@ -165,15 +256,24 @@ export default function Projects() {
       <div className="Container section4">
         <div className="project-wrapper">
           <img
-            src='/movie_clone_web.png'
+            src="/movie_clone_web.png"
             alt="Career Craft Screenshot"
             className="project-image img4"
           />
 
           <div className="project-details">
-            <h2 className="project-title">StreamFlix - Movie App (Inspired by Netflix)</h2>
+            <h2 className="project-title">
+              StreamFlix - Movie App (Inspired by Netflix)
+            </h2>
             <p className="project-description">
-              StreamFlix is an Android application built using Android Studio, offering a sleek and intuitive user interface inspired by popular streaming platforms. The app allows users to explore a wide range of movies and TV shows, organized by categories like trending, popular, and upcoming releases. It features detailed information about each title, including synopses, cast, and release dates. While the app does not yet include video playback, it showcases a fully responsive layout and smooth navigation.
+              StreamFlix is an Android application built using Android Studio,
+              offering a sleek and intuitive user interface inspired by popular
+              streaming platforms. The app allows users to explore a wide range
+              of movies and TV shows, organized by categories like trending,
+              popular, and upcoming releases. It features detailed information
+              about each title, including synopses, cast, and release dates.
+              While the app does not yet include video playback, it showcases a
+              fully responsive layout and smooth navigation.
             </p>
             <div className="tech-stack">
               <span className="tech-badge">Andriod Studio</span>
@@ -203,7 +303,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

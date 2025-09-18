@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap');
+          
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+          
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.typewriter-container {
+  height: 40px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: #0dcaf0;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.social-link.linkedin:hover {
+  background: #0a66c2;
+  box-shadow: 0 5px 15px rgba(10, 102, 194, 0.4);
+}
+
+.social-link.github:hover {
+  background: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.profile-image-container {
+  display: inline-block;
+  position: relative;
+}
+
+.profile-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 3px solid #4facfe;
+  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(79, 172, 254, 0.4);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.btn-outline-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(23, 162, 184, 0.3);
+}
+
+@media (max-width: 768px) {
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  h1.display-3 {
+    font-size: 2.5rem;
+  }
+}

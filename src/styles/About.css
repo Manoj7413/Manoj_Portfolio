@@ -1,0 +1,43 @@
+.gradient-text {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.skill-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.divider {
+    border-radius: 2px;
+}
+
+.text-accent {
+    color: #4facfe !important;
+}
+
+.skills-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .icon-container {
+    width: 40px;
+    height: 40px;
+    }
+    
+    .icon-container svg {
+    width: 18px;
+    height: 18px;
+    }
+}
