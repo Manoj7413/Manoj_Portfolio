@@ -11,7 +11,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import "../styles/Contact.css";
+import "../styles/contact.css";
 
 const Contact = () => {
   const form = useRef();
